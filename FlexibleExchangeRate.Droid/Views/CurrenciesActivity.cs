@@ -10,12 +10,13 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using MvvmCross.Droid.Views;
+using FlexibleExchangeRate.Core.ViewModels;
 
 namespace FlexibleExchangeRate.Droid.Views
 {
     [Activity(Label = "Waluty")]
     public class CurrenciesActivity
-        : MvxActivity
+        : MvxActivity<CurrenciesViewModel>
     {
         protected override void OnCreate(Bundle bundle)
         {
